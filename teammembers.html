@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Members</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('notredame.jpg') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .member-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            flex-wrap: wrap; /* This ensures that the members wrap if the screen is too small */
+        }
+
+        .member {
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 30%;
+            margin: 10px; /* Adds space between the member cards */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        /* Set a specific width and height for the images */
+        .member img {
+            width: 100%; /* This will cover the width of the .member container */
+            height: 450px; /* Fixed height for all images */
+            object-fit: cover; /* This will cover the area without stretching the image */
+            border-radius: 5px;
+        }
+
+        .member-info {
+            margin-top: 20px;
+        }
+
+        .member-info h3, .member-info p {
+            margin: 10px 0;
+        }
+
+        .member-info p strong {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="member-container">
+        <div class="member">
+            <img src="santiago.jpg" alt="Team Member 1">
+            <div class="member-info">
+                <h3>&nbsp;Name: Santiago Calderon Leiva</h3>
+                <p>&nbsp;Class: Freshman</p>
+                <p>&nbsp;Hometown: Madrid, Spain</p>
+                <p>&nbsp;Dorm: Alumni Hall</p>
+                <p>&nbsp;Major: Finance & ACMS</p>
+            </div>
+        </div>
+        <div class="member">
+            <img src="roger.jpg" alt="Team Member 2">
+            <div class="member-info">
+                <h3>&nbsp;Name: Roger Liria Sala</h3>
+                <p>&nbsp;Class: Freshman</p>
+                <p>&nbsp;Hometown: Barcelona, Spain</p>
+                <p>&nbsp;Dorm: Pangborn Hall</p>
+                <p>&nbsp;Major: Finance & ACMS</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
